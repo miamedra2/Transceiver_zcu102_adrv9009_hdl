@@ -1,0 +1,976 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Sep 21 19:16:33 2020
+# Process ID: 19592
+# Current directory: C:/github/hdl/projects/adrv9009/zcu102
+# Command line: vivado.exe
+# Log file: C:/github/hdl/projects/adrv9009/zcu102/vivado.log
+# Journal file: C:/github/hdl/projects/adrv9009/zcu102\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/github/ghdl/library'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/github/hdl/library'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/github/ghdl/library'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/software/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:28 . Memory (MB): peak = 874.332 ; gain = 271.203
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2120 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 5 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2850.645 ; gain = 80.855
+Restored from archive | CPU: 32.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2850.645 ; gain = 80.855
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 2850.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 549 instances were transformed.
+  DSP48E => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 16 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 56 instances
+  DSP48E2 => DSP48E2 (inverted pins: INMODE[3]) (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 72 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 14 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 2 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 28 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 194 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 154 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 4 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 9 instances
+
+open_run: Time (s): cpu = 00:02:33 ; elapsed = 00:02:21 . Memory (MB): peak = 3067.785 ; gain = 2117.297
+open_report: Time (s): cpu = 00:01:58 ; elapsed = 00:00:52 . Memory (MB): peak = 4441.922 ; gain = 1345.227
+open_bd_design {C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:zynq_ultra_ps_e:3.2 - sys_ps8
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_250m_rstgen
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_500m_rstgen
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - spi0_csn_concat
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - VCC_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - GND_1
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - spi1_csn_concat
+Adding cell -- analog.com:user:axi_sysid:1.0 - axi_sysid_0
+Adding cell -- analog.com:user:sysid_rom:1.0 - rom_sys_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_cpu_interconnect
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc_1
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_hp0_interconnect
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_adrv9009_tx_clkgen
+Adding cell -- analog.com:user:axi_adxcvr:1.0 - axi_adrv9009_tx_xcvr
+Adding cell -- analog.com:user:axi_jesd204_tx:1.0 - tx_axi
+Adding cell -- analog.com:user:jesd204_tx:1.0 - tx
+Adding cell -- analog.com:user:util_upack2:1.0 - util_adrv9009_tx_upack
+Adding cell -- xilinx.com:module_ref:sync_bits:1.0 - cdc_sync_active
+Adding cell -- xilinx.com:module_ref:util_pulse_gen:1.0 - rate_gen
+Adding cell -- xilinx.com:ip:fir_compiler:7.2 - fir_interpolation_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - logic_and_0
+Adding cell -- xilinx.com:module_ref:ad_bus_mux:1.0 - out_mux_0
+Adding cell -- xilinx.com:ip:fir_compiler:7.2 - fir_interpolation_1
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - logic_and_1
+Adding cell -- xilinx.com:module_ref:ad_bus_mux:1.0 - out_mux_1
+Adding cell -- xilinx.com:ip:fir_compiler:7.2 - fir_interpolation_2
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - logic_and_2
+Adding cell -- xilinx.com:module_ref:ad_bus_mux:1.0 - out_mux_2
+Adding cell -- xilinx.com:ip:fir_compiler:7.2 - fir_interpolation_3
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - logic_and_3
+Adding cell -- xilinx.com:module_ref:ad_bus_mux:1.0 - out_mux_3
+WARNING: [BD 41-1731] Type mismatch between connected pins: /tx_fir_interpolator/cdc_sync_active/out_bits(undef) and /tx_fir_interpolator/rate_gen/rstn(rst)
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - GND_32
+Adding cell -- analog.com:user:ad_ip_jesd204_tpl_dac:1.0 - tpl_core
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - data_concat
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_3
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_3
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_adrv9009_tx_dma
+Adding cell -- analog.com:user:util_dacfifo:1.0 - axi_adrv9009_dacfifo
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_adrv9009_rx_clkgen
+Adding cell -- analog.com:user:axi_adxcvr:1.0 - axi_adrv9009_rx_xcvr
+Adding cell -- analog.com:user:axi_jesd204_rx:1.0 - rx_axi
+Adding cell -- analog.com:user:jesd204_rx:1.0 - rx
+Adding cell -- analog.com:user:util_cpack2:1.0 - util_adrv9009_rx_cpack
+Adding cell -- analog.com:user:ad_ip_jesd204_tpl_adc:1.0 - tpl_core
+Adding cell -- xilinx.com:ip:xlslice:1.0 - data_slice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - data_slice_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - data_slice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - data_slice_3
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_3
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_3
+Adding cell -- xilinx.com:module_ref:sync_bits:1.0 - cdc_sync_active
+Adding cell -- xilinx.com:ip:fir_compiler:7.2 - fir_decimation_0
+Adding cell -- xilinx.com:module_ref:ad_bus_mux:1.0 - out_mux_0
+Adding cell -- xilinx.com:ip:fir_compiler:7.2 - fir_decimation_1
+Adding cell -- xilinx.com:module_ref:ad_bus_mux:1.0 - out_mux_1
+Adding cell -- xilinx.com:ip:fir_compiler:7.2 - fir_decimation_2
+Adding cell -- xilinx.com:module_ref:ad_bus_mux:1.0 - out_mux_2
+Adding cell -- xilinx.com:ip:fir_compiler:7.2 - fir_decimation_3
+Adding cell -- xilinx.com:module_ref:ad_bus_mux:1.0 - out_mux_3
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_adrv9009_rx_dma
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_adrv9009_rx_os_clkgen
+Adding cell -- analog.com:user:axi_adxcvr:1.0 - axi_adrv9009_rx_os_xcvr
+Adding cell -- analog.com:user:axi_jesd204_rx:1.0 - rx_axi
+Adding cell -- analog.com:user:jesd204_rx:1.0 - rx
+Adding cell -- analog.com:user:util_cpack2:1.0 - util_adrv9009_rx_os_cpack
+Adding cell -- analog.com:user:ad_ip_jesd204_tpl_adc:1.0 - tpl_core
+Adding cell -- xilinx.com:ip:xlslice:1.0 - data_slice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - data_slice_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - data_slice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - data_slice_3
+Adding cell -- xilinx.com:ip:xlslice:1.0 - enable_slice_3
+Adding cell -- xilinx.com:ip:xlslice:1.0 - valid_slice_3
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_adrv9009_rx_os_dma
+Adding cell -- analog.com:user:util_adxcvr:1.0 - util_adrv9009_xcvr
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - adrv9009_tx_device_clk_rstgen
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - adrv9009_rx_device_clk_rstgen
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - adrv9009_rx_os_device_clk_rstgen
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - logic_or
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_hp1_interconnect
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_hp2_interconnect
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_hp3_interconnect
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_adrv9009_tx_xcvr/up_pll_rst(rst) and /util_adrv9009_xcvr/up_qpll_rst_0(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_adrv9009_rx_xcvr/up_pll_rst(rst) and /util_adrv9009_xcvr/up_cpll_rst_0(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_adrv9009_rx_xcvr/up_pll_rst(rst) and /util_adrv9009_xcvr/up_cpll_rst_1(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_adrv9009_rx_os_xcvr/up_pll_rst(rst) and /util_adrv9009_xcvr/up_cpll_rst_2(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_adrv9009_rx_os_xcvr/up_pll_rst(rst) and /util_adrv9009_xcvr/up_cpll_rst_3(undef)
+Successfully read diagram <system> from BD file <C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 5662.668 ; gain = 0.000
+create_bd_port -dir O -type clk axi_clk
+set_property location {5888 1809} [get_bd_ports axi_clk]
+set_property location {3060 1686} [get_bd_ports axi_clk]
+connect_bd_net [get_bd_ports axi_clk] [get_bd_pins sys_ps8/pl_clk0]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+set_property location {5425 3139} [get_bd_ports axi_clk]
+regenerate_bd_layout
+set_property location {6017 3250} [get_bd_ports axi_clk]
+regenerate_bd_layout
+create_bd_port -dir O -type rst axi_rst_n
+connect_bd_net [get_bd_ports axi_rst_n] [get_bd_pins sys_rstgen/peripheral_aresetn]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {19}] [get_bd_cells axi_cpu_interconnect]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_cpu_interconnect/M16_AXI]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_cpu_interconnect/M17_AXI]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_cpu_interconnect/M18_AXI]
+endgroup
+set_property name axi_regs [get_bd_intf_ports M16_AXI_0]
+set_property -dict [list CONFIG.PROTOCOL {AXI4LITE}] [get_bd_intf_ports axi_regs]
+set_property name axi_tx_bram [get_bd_intf_ports M17_AXI_0]
+set_property name axi_rx_bram [get_bd_intf_ports M18_AXI_0]
+assign_bd_address [get_bd_addr_segs {axi_regs/Reg }]
+</axi_regs/Reg> is being mapped into </sys_ps8/Data> at <0x80000000 [ 64K ]>
+assign_bd_address [get_bd_addr_segs {axi_tx_bram/Reg }]
+</axi_tx_bram/Reg> is being mapped into </sys_ps8/Data> at <0x80010000 [ 64K ]>
+assign_bd_address [get_bd_addr_segs {axi_rx_bram/Reg }]
+</axi_rx_bram/Reg> is being mapped into </sys_ps8/Data> at <0x80020000 [ 64K ]>
+save_bd_design
+Wrote  : <C:\github\hdl\projects\adrv9009\zcu102\adrv9009_zcu102.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+generate_target all [get_files  C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/axi_cpu_interconnect/M16_ACLK
+/axi_cpu_interconnect/M17_ACLK
+/axi_cpu_interconnect/M18_ACLK
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+connect_bd_net [get_bd_pins axi_cpu_interconnect/M16_ACLK] [get_bd_pins sys_ps8/pl_clk0]
+connect_bd_net [get_bd_pins axi_cpu_interconnect/M17_ACLK] [get_bd_pins sys_ps8/pl_clk0]
+connect_bd_net [get_bd_pins axi_cpu_interconnect/M18_ACLK] [get_bd_pins sys_ps8/pl_clk0]
+connect_bd_net [get_bd_pins axi_cpu_interconnect/M16_ARESETN] [get_bd_pins sys_rstgen/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_cpu_interconnect/M17_ARESETN] [get_bd_pins sys_rstgen/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_cpu_interconnect/M18_ARESETN] [get_bd_pins sys_rstgen/peripheral_aresetn]
+validate_bd_design
+CRITICAL WARNING: [BD 41-968] AXI interface port /axi_regs is not associated to any clock port. It may not work correctly. Please update ASSOCIATED_BUSIF parameter of a clock port to include this interface port.
+CRITICAL WARNING: [BD 41-968] AXI interface port /axi_tx_bram is not associated to any clock port. It may not work correctly. Please update ASSOCIATED_BUSIF parameter of a clock port to include this interface port.
+CRITICAL WARNING: [BD 41-968] AXI interface port /axi_rx_bram is not associated to any clock port. It may not work correctly. Please update ASSOCIATED_BUSIF parameter of a clock port to include this interface port.
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+xit::source_ipfile: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 5662.668 ; gain = 0.000
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /sys_ps8/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /sys_ps8/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP0_FPD(1) and /axi_hp0_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP0_FPD(1) and /axi_hp0_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP1_FPD(1) and /axi_hp1_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP1_FPD(1) and /axi_hp1_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/M00_AXI(0)
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /axi_regs(100000000) and /axi_cpu_interconnect/tier2_xbar_2/M00_AXI(99990005)
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /axi_tx_bram(100000000) and /axi_cpu_interconnect/m17_couplers/auto_pc/M_AXI(99990005)
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /axi_rx_bram(100000000) and /axi_cpu_interconnect/m18_couplers/auto_pc/M_AXI(99990005)
+WARNING: [BD 41-927] Following properties on pin /axi_sysid_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /rom_sys_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_tx_upack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dma_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk1 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dma_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dac_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dac_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_rx_cpack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_rx_os_cpack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/up_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_out_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_rx_out_clk_2 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_fir_interpolator/cdc_sync_active/out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_fir_interpolator/rate_gen/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /rx_fir_decimator/cdc_sync_active/out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_os_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_os_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+validate_bd_design: Time (s): cpu = 00:01:50 ; elapsed = 00:02:01 . Memory (MB): peak = 5662.668 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+validate_bd_design
+CRITICAL WARNING: [BD 41-968] AXI interface port /axi_regs is not associated to any clock port. It may not work correctly. Please update ASSOCIATED_BUSIF parameter of a clock port to include this interface port.
+CRITICAL WARNING: [BD 41-968] AXI interface port /axi_tx_bram is not associated to any clock port. It may not work correctly. Please update ASSOCIATED_BUSIF parameter of a clock port to include this interface port.
+CRITICAL WARNING: [BD 41-968] AXI interface port /axi_rx_bram is not associated to any clock port. It may not work correctly. Please update ASSOCIATED_BUSIF parameter of a clock port to include this interface port.
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+xit::source_ipfile: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 5662.668 ; gain = 0.000
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /sys_ps8/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /sys_ps8/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP0_FPD(1) and /axi_hp0_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP0_FPD(1) and /axi_hp0_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP1_FPD(1) and /axi_hp1_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP1_FPD(1) and /axi_hp1_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/M00_AXI(0)
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /axi_regs(100000000) and /axi_cpu_interconnect/tier2_xbar_2/M00_AXI(99990005)
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /axi_tx_bram(100000000) and /axi_cpu_interconnect/m17_couplers/auto_pc/M_AXI(99990005)
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /axi_rx_bram(100000000) and /axi_cpu_interconnect/m18_couplers/auto_pc/M_AXI(99990005)
+WARNING: [BD 41-927] Following properties on pin /axi_sysid_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /rom_sys_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_tx_upack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dma_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk1 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dma_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dac_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dac_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_rx_cpack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_rx_os_cpack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/up_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_out_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_rx_out_clk_2 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_fir_interpolator/cdc_sync_active/out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_fir_interpolator/rate_gen/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /rx_fir_decimator/cdc_sync_active/out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_os_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_os_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+validate_bd_design: Time (s): cpu = 00:01:41 ; elapsed = 00:01:55 . Memory (MB): peak = 5662.668 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+delete_bd_objs [get_bd_intf_nets axi_cpu_interconnect_M16_AXI] [get_bd_intf_ports axi_regs]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_cpu_interconnect/M16_AXI]
+endgroup
+set_property name axi_regs [get_bd_intf_ports M16_AXI_0]
+set_property CONFIG.ASSOCIATED_BUSIF {axi_regs} [get_bd_ports /axi_clk]
+set_property CONFIG.ASSOCIATED_BUSIF {axi_regs:axi_rx_bram} [get_bd_ports /axi_clk]
+set_property CONFIG.ASSOCIATED_BUSIF {axi_regs:axi_rx_bram:axi_tx_bram} [get_bd_ports /axi_clk]
+save_bd_design
+Wrote  : <C:\github\hdl\projects\adrv9009\zcu102\adrv9009_zcu102.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+save_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 5662.668 ; gain = 0.000
+validate_bd_design
+CRITICAL WARNING: [BD 41-1356] Address block </axi_regs/Reg> is not mapped into </sys_ps8/Data>. Please use Address Editor to either map or exclude it.
+INFO: [Common 17-365] Interrupt caught but 'validate_bd_design' cannot be canceled. Please wait for command to finish.
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+xit::source_ipfile: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 5662.668 ; gain = 0.000
+xit::source_ipfile: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 5662.668 ; gain = 0.000
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+CRITICAL WARNING: [BD 41-1356] Address block </axi_regs/Reg> is not mapped into </sys_ps8/Data>. Please use Address Editor to either map or exclude it.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP0_FPD(1) and /axi_hp0_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP0_FPD(1) and /axi_hp0_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP1_FPD(1) and /axi_hp1_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP1_FPD(1) and /axi_hp1_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /axi_cpu_interconnect/s00_mmu/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /axi_cpu_interconnect/s00_mmu/M_AXI(16)
+WARNING: [BD 41-927] Following properties on pin /axi_sysid_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /rom_sys_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_tx_upack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dma_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk1 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dma_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dac_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dac_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_rx_cpack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_rx_os_cpack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/up_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_out_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_rx_out_clk_2 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_fir_interpolator/cdc_sync_active/out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_fir_interpolator/rate_gen/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /rx_fir_decimator/cdc_sync_active/out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_os_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_os_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+validate_bd_design: Time (s): cpu = 00:02:05 ; elapsed = 00:02:30 . Memory (MB): peak = 5662.668 ; gain = 0.000
+INFO: [Common 17-681] Processing pending cancel.
+assign_bd_address [get_bd_addr_segs {axi_regs/Reg }]
+</axi_regs/Reg> is being mapped into </sys_ps8/Data> at <0x80000000 [ 64K ]>
+validate_bd_design
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+xit::source_ipfile: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 5662.668 ; gain = 0.000
+xit::source_ipfile: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 5662.668 ; gain = 0.000
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /sys_ps8/pl_ps_irq1
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_2 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rx_fir_decimator/fir_decimation_3 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /tx_fir_interpolator/fir_interpolation_1 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /sys_ps8/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /sys_ps8/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP0_FPD(1) and /axi_hp0_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP0_FPD(1) and /axi_hp0_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP1_FPD(1) and /axi_hp1_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP1_FPD(1) and /axi_hp1_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/M00_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /axi_sysid_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /rom_sys_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_tx_upack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dma_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk1 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dma_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dac_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_dacfifo/dac_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_rx_cpack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_rx_os_cpack/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/up_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_out_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_adrv9009_xcvr_0_rx_out_clk_2 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/rx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_adrv9009_xcvr/tx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_tx_jesd/tx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_fir_interpolator/cdc_sync_active/out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_fir_interpolator/rate_gen/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_tx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /tx_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_jesd/rx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /rx_fir_decimator/cdc_sync_active/out_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_adrv9009_rx_os_jesd/rx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_os_adrv9009_tpl_core/tpl_core/link_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_adrv9009_rx_os_clkgen_0_clk_0 
+WARNING: [BD 41-927] Following properties on pin /rx_os_adrv9009_tpl_core/tpl_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+validate_bd_design: Time (s): cpu = 00:02:10 ; elapsed = 00:02:35 . Memory (MB): peak = 5662.668 ; gain = 0.000
+generate_target all [get_files  C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\github\hdl\projects\adrv9009\zcu102\adrv9009_zcu102.srcs\sources_1\bd\system\system.bd> 
+VHDL Output written to : C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_250m_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_500m_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block spi0_csn_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VCC_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block spi1_csn_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_sysid_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rom_sys_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_concat_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_concat_intc_1 .
+Exporting to file c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/hw_handoff/system_axi_hp0_interconnect_0.hwh
+Generated Block Design Tcl file c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/hw_handoff/system_axi_hp0_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp0_interconnect_0/bd_0/synth/system_axi_hp0_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp0_interconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_tx_clkgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_tx_xcvr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_tx_jesd/tx_axi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_tx_jesd/tx .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_adrv9009_tx_upack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/cdc_sync_active .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/rate_gen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/fir_interpolation_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/logic_and_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/out_mux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/fir_interpolation_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/logic_and_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/out_mux_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/fir_interpolation_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/logic_and_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/out_mux_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/fir_interpolation_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/logic_and_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_fir_interpolator/out_mux_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND_32 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_adrv9009_tpl_core/tpl_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_adrv9009_tpl_core/data_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_adrv9009_tpl_core/enable_slice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_adrv9009_tpl_core/valid_slice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_adrv9009_tpl_core/enable_slice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_adrv9009_tpl_core/valid_slice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_adrv9009_tpl_core/enable_slice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_adrv9009_tpl_core/valid_slice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_adrv9009_tpl_core/enable_slice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_adrv9009_tpl_core/valid_slice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_tx_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_dacfifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_rx_clkgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_rx_xcvr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_rx_jesd/rx_axi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_rx_jesd/rx .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_adrv9009_rx_cpack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/tpl_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/data_slice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/enable_slice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/valid_slice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/data_slice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/enable_slice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/valid_slice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/data_slice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/enable_slice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/valid_slice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/data_slice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/enable_slice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_adrv9009_tpl_core/valid_slice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_fir_decimator/cdc_sync_active .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_fir_decimator/fir_decimation_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_fir_decimator/out_mux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_fir_decimator/fir_decimation_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_fir_decimator/out_mux_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_fir_decimator/fir_decimation_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_fir_decimator/out_mux_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_fir_decimator/fir_decimation_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_fir_decimator/out_mux_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_rx_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_rx_os_clkgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_rx_os_xcvr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_rx_os_jesd/rx_axi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_rx_os_jesd/rx .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_adrv9009_rx_os_cpack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/tpl_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/data_slice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/enable_slice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/valid_slice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/data_slice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/enable_slice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/valid_slice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/data_slice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/enable_slice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/valid_slice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/data_slice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/enable_slice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx_os_adrv9009_tpl_core/valid_slice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_adrv9009_rx_os_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_adrv9009_xcvr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adrv9009_tx_device_clk_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adrv9009_rx_device_clk_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adrv9009_rx_os_device_clk_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block logic_or .
+Exporting to file c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/hw_handoff/system_axi_hp1_interconnect_0.hwh
+Generated Block Design Tcl file c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/hw_handoff/system_axi_hp1_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/bd_0/synth/system_axi_hp1_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp1_interconnect .
+Exporting to file c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/hw_handoff/system_axi_hp2_interconnect_0.hwh
+Generated Block Design Tcl file c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/hw_handoff/system_axi_hp2_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/synth/system_axi_hp2_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp2_interconnect .
+INFO: [Common 17-14] Message 'BD 41-1029' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Exporting to file c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp3_interconnect_0/bd_0/hw_handoff/system_axi_hp3_interconnect_0.hwh
+Generated Block Design Tcl file c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp3_interconnect_0/bd_0/hw_handoff/system_axi_hp3_interconnect_0_bd.tcl
+Generated Hardware Definition File c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_hp3_interconnect_0/bd_0/synth/system_axi_hp3_interconnect_0.hwdef
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+Exporting to file C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:02:03 ; elapsed = 00:02:12 . Memory (MB): peak = 5803.000 ; gain = 140.332
+export_ip_user_files -of_objects [get_files C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd] -directory C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.ip_user_files/sim_scripts -ip_user_files_dir C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.ip_user_files -ipstatic_source_dir C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.cache/compile_simlib/modelsim} {questa=C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.cache/compile_simlib/questa} {riviera=C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.cache/compile_simlib/riviera} {activehdl=C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd] -top
+WARNING: [Vivado 12-3482] The generated wrapper file has already been imported into the project, the imported file is:
+'C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/hdl/system_wrapper.v'
+add_files -norecurse C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+open_bd_design {C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd}
+make_wrapper -files [get_files C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd] -top
+WARNING: [Vivado 12-3482] The generated wrapper file has already been imported into the project, the imported file is:
+'C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/hdl/system_wrapper.v'
+export_ip_user_files -of_objects  [get_files C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/hdl/system_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/hdl/system_wrapper.v
+file delete -force C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+set_property file_type SystemVerilog [get_files  C:/github/hdl/projects/adrv9009/zcu102/system_top.v]
+open_bd_design {C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd}
+import_files -norecurse {C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_interface.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4_address_counter.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_slave_interface_write_fsm.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_awg.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_tx_bram_fsm.sv C:/github/xilinx_zcu102/designs/xvr_example/src/counter.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_rx_bram_fsm.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_tx_bram.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4_burst_counter.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_slave_interface_read_fsm.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/bram_8k_x_32.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/bram_8k_x_4.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_slave_interface_write.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4_bram_common_address.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_slave_interface_read.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_rx_bram.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_registers.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4_bram_common_address_fsm.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/bram_16k_x_32_and_8k_x_64.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_system.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_slave_interface.sv}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_system.sv] -no_script -reset -force -quiet
+remove_files  C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_system.sv
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon Sep 21 21:00:02 2020] Launched synth_1...
+Run output will be captured here: C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon Sep 21 21:36:36 2020] Launched synth_1...
+Run output will be captured here: C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.runs/synth_1/runme.log
+reset_run synth_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 21 21:36:57 2020...

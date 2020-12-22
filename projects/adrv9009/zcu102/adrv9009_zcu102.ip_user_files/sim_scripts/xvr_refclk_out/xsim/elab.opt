@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L gtwizard_ultrascale_v1_7_5 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot xvr_refclk_out xil_defaultlib.xvr_refclk_out xil_defaultlib.glbl -log elaborate.log

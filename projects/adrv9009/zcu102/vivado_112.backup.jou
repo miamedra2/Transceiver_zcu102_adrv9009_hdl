@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct  7 14:31:33 2020
+# Process ID: 112
+# Current directory: C:/github/zcu102_adrv9009_xvr/design_xvr_adrv9009/hdl/projects/adrv9009/zcu102
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13160 C:\github\zcu102_adrv9009_xvr\design_xvr_adrv9009\hdl\projects\adrv9009\zcu102\adrv9009_zcu102.xpr
+# Log file: C:/github/zcu102_adrv9009_xvr/design_xvr_adrv9009/hdl/projects/adrv9009/zcu102/vivado.log
+# Journal file: C:/github/zcu102_adrv9009_xvr/design_xvr_adrv9009/hdl/projects/adrv9009/zcu102\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/github/zcu102_adrv9009_xvr/design_xvr_adrv9009/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/github/zcu102_adrv9009_xvr/design_xvr_adrv9009/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd}

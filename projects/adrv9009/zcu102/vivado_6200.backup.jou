@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct  7 16:03:03 2020
+# Process ID: 6200
+# Current directory: C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17580 C:\github\zcu102_adrv9009_xvr_clock\hdl\projects\adrv9009\zcu102\adrv9009_zcu102.xpr
+# Log file: C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/vivado.log
+# Journal file: C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.xpr
+update_compile_order -fileset sources_1update_compile_order -fileset sources_1
+thub/xilinx_zcu102/designs/xvr_example/src/xvr_refclk_out_interface.sv
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_refclk_out_interface.sv] -no_script -reset -force -quiet
+remove_files  C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_refclk_out_interface.sv
+remove_files  C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_refclk_out_interface.sv
+add_files -norecurse C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_refclk_out_interface.sv
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_refclk_out_interface.sv] -no_script -reset -force -quiet
+remove_files  C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_refclk_out_interface.sv
+remove_files  C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_refclk_out_interface.sv
+open_bd_design {C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd}
+set_property location {6211 1607} [get_bd_intf_ports axi_tx_bram]
+set_property location {6212 1640} [get_bd_intf_ports axi_rx_bram]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {4}] [get_bd_cells axi_interconnect_0]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_interconnect_0/M03_AXI]
+endgroup
+set_property name axi_drp [get_bd_intf_ports M03_AXI_0]
+set_property -dict [list CONFIG.PROTOCOL {AXI4LITE}] [get_bd_intf_ports axi_drp]
+set_property -dict [list CONFIG.PROTOCOL {AXI4}] [get_bd_intf_ports axi_drp]
+set_property -dict [list CONFIG.PROTOCOL {AXI4LITE}] [get_bd_intf_ports axi_drp]
+save_bd_design
+generate_target all [get_files  C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd]
+connect_bd_net [get_bd_pins axi_interconnect_0/M03_ACLK] [get_bd_pins sys_ps8/pl_clk0]
+connect_bd_net [get_bd_pins axi_interconnect_0/M03_ARESETN] [get_bd_pins sys_rstgen/peripheral_aresetn]
+assign_bd_address [get_bd_addr_segs {axi_drp/Reg }]
+save_bd_design
+generate_target all [get_files  C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M03_AXI] [get_bd_intf_ports axi_drp]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_interconnect_0/M03_AXI]
+endgroup
+set_property name axi_drp [get_bd_intf_ports M03_AXI_0]
+set_property CONFIG.ASSOCIATED_BUSIF {axi_regs:axi_rx_bram:axi_tx_bram:axi_drp} [get_bd_ports /axi_clk]
+assign_bd_address [get_bd_addr_segs {axi_drp/Reg }]
+save_bd_design
+validate_bd_design
+generate_target all [get_files  C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/system.bd] -directory C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.ip_user_files/sim_scripts -ip_user_files_dir C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.ip_user_files -ipstatic_source_dir C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.cache/compile_simlib/modelsim} {questa=C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.cache/compile_simlib/questa} {riviera=C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.cache/compile_simlib/riviera} {activehdl=C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_address_counter.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_bram_common_address.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_bram_common_address_fsm.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_burst_counter.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_read.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_read_fsm.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_write.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_write_fsm.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/bram_16k_x_32_and_8k_x_64.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/bram_8k_x_32.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/bram_8k_x_4.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/counter.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_awg.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_interface.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_registers.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_rx_bram.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_rx_bram_fsm.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_tx_bram.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_tx_bram_fsm.sv] -no_script -reset -force -quiet
+remove_files  {C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_address_counter.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_bram_common_address.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_bram_common_address_fsm.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_burst_counter.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_read.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_read_fsm.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_write.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_write_fsm.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/bram_16k_x_32_and_8k_x_64.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/bram_8k_x_32.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/bram_8k_x_4.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/counter.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_awg.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_interface.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_registers.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_rx_bram.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_rx_bram_fsm.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_tx_bram.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_tx_bram_fsm.sv}
+file delete -force C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_address_counter.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_bram_common_address.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_bram_common_address_fsm.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4_burst_counter.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_read.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_read_fsm.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_write.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/axi4lite_slave_interface_write_fsm.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/bram_16k_x_32_and_8k_x_64.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/bram_8k_x_32.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/axi4/bram_8k_x_4.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/counter.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_awg.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_interface.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_registers.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_rx_bram.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_rx_bram_fsm.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_tx_bram.sv C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/imports/src/xvr_tx_bram_fsm.sv
+add_files -norecurse {C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_interface.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4_address_counter.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_awg.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_tx_bram_fsm.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/clock_counter.sv C:/github/xilinx_zcu102/designs/xvr_example/src/counter.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_rx_bram_fsm.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_tx_bram.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/bram_8k_x_32.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_slave_interface_write.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_slave_interface_read.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_registers.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4_bram_common_address_fsm.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_to_drp_bridge_counter.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/bram_16k_x_32_and_8k_x_64.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_to_drp_bridge_fsm.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_slave_interface_write_fsm.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_refclk_out_interface.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4_burst_counter.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_slave_interface_read_fsm.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/bram_8k_x_4.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4_bram_common_address.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_rx_bram.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_to_drp_bridge.sv C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_system.sv C:/github/xilinx_zcu102/designs/xvr_example/src_axi4/axi4lite_slave_interface.sv}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_system.sv] -no_script -reset -force -quiet
+remove_files  C:/github/xilinx_zcu102/designs/xvr_example/src/xvr_system.sv
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+pwd
+cd C:/github/xilinx_zcu102/designs/xvr_example/
+source scripts/xvr_refclk_out.tcl
+set ip_dir {C:\github\zcu102_adrv9009_xvr_clock\hdl\projects\adrv9009\zcu102\adrv9009_zcu102.srcs\sources_1\ip}
+source scripts/xvr_refclk_out.tcl
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/ip/xvr/xvr.xci] -no_script -reset -force -quiet
+remove_files  -fileset xvr C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/ip/xvr/xvr.xci
+file delete -force C:/github/zcu102_adrv9009_xvr_clock/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/ip/xvr
+source scripts/xvr.tcl
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1

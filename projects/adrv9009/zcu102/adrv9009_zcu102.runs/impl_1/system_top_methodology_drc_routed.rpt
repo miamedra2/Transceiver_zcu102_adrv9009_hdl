@@ -1,0 +1,293 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Dec 18 12:05:00 2020
+| Host         : MT-202935 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file system_top_methodology_drc_routed.rpt -pb system_top_methodology_drc_routed.pb -rpx system_top_methodology_drc_routed.rpx
+| Design       : system_top
+| Device       : xczu9eg-ffvb1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 48
++-----------+----------+------------------------------------------------------+------------+
+| Rule      | Severity | Description                                          | Violations |
++-----------+----------+------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                         | 8          |
+| TIMING-1  | Warning  | Invalid clock waveform on Clock Modifying Block      | 3          |
+| TIMING-2  | Warning  | Invalid primary clock source pin                     | 2          |
+| TIMING-3  | Warning  | Invalid primary clock on Clock Modifying Block       | 4          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                    | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                     | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                        | 12         |
+| TIMING-35 | Warning  | No common node in paths with the same clock          | 1          |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects          | 6          |
+| CLKC-11   | Advisory | MMCME4 divide could be done by BUFG_GT               | 3          |
+| CLKC-26   | Advisory | MMCME4 with BUF_IN drives sequential IO with CLKOUT0 | 1          |
+| CLKC-30   | Advisory | MMCME4 not driven by IO has BUFG in feedback loop    | 3          |
+| CLKC-56   | Advisory | MMCME4 with global clock driver has no LOC           | 3          |
++-----------+----------+------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_sel[0]_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell u2/u13/u4/inst/gen_gtwizard_gthe4_top.xvr_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u2/u13/u4/inst/gen_gtwizard_gthe4_top.xvr_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_reg/PRE, u2/u13/u4/inst/gen_gtwizard_gthe4_top.xvr_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_out_reg/PRE, u2/u13/u4/inst/gen_gtwizard_gthe4_top.xvr_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync1_reg/PRE, u2/u13/u4/inst/gen_gtwizard_gthe4_top.xvr_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync2_reg/PRE, u2/u13/u4/inst/gen_gtwizard_gthe4_top.xvr_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.cpll_cal_reset_int, with 2 or more inputs, drives asynchronous preset/clear pin(s) u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_reg/PRE, u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_out_reg/PRE, u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync1_reg/PRE, u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync2_reg/PRE, u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_reg/PRE, u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_out_reg/PRE, u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync1_reg/PRE, u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync2_reg/PRE, u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-1#1 Warning
+Invalid clock waveform on Clock Modifying Block  
+Invalid clock waveform for clock rx_div_clk specified at a GTHE4_CHANNEL output i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_0/i_gthe4_channel/RXOUTCLK that does not match the CMB settings. The waveform of the clock is 4 {0 2}. The expected waveform is 2 {0 1}
+Related violations: <none>
+
+TIMING-1#2 Warning
+Invalid clock waveform on Clock Modifying Block  
+Invalid clock waveform for clock rx_os_div_clk specified at a GTHE4_CHANNEL output i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_2/i_gthe4_channel/RXOUTCLK that does not match the CMB settings. The waveform of the clock is 4 {0 2}. The expected waveform is 2 {0 1}
+Related violations: <none>
+
+TIMING-1#3 Warning
+Invalid clock waveform on Clock Modifying Block  
+Invalid clock waveform for clock tx_div_clk specified at a GTHE4_CHANNEL output i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_0/i_gthe4_channel/TXOUTCLK that does not match the CMB settings. The waveform of the clock is 4 {0 2}. The expected waveform is 2 {0 1}
+Related violations: <none>
+
+TIMING-2#1 Warning
+Invalid primary clock source pin  
+A primary clock spi0_clk is created on an inappropriate pin i_system_wrapper/system_i/sys_ps8/inst/PS8_i/EMIOSPI0SCLKO. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#2 Warning
+Invalid primary clock source pin  
+A primary clock spi1_clk is created on an inappropriate pin i_system_wrapper/system_i/sys_ps8/inst/PS8_i/EMIOSPI1SCLKO. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-3#1 Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock rx_div_clk is created on the output pin or net i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_0/i_gthe4_channel/RXOUTCLK of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#2 Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock rx_os_div_clk is created on the output pin or net i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_2/i_gthe4_channel/RXOUTCLK of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#3 Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock tx_div_clk is created on the output pin or net i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_0/i_gthe4_channel/TXOUTCLK of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#4 Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_5_gthe4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst/O is created on the output pin or net u2/u15/u1/inst/gen_gtwizard_gthe4_top.xvr_refclk_out_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_5_gthe4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst/O of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on spi_miso relative to clock(s) spi0_clk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on sysref_n relative to clock(s) rx_div_clk, rx_os_div_clk, tx_div_clk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on sysref_p relative to clock(s) rx_div_clk, rx_os_div_clk, tx_div_clk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on tx_sync_n relative to clock(s) tx_div_clk
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on tx_sync_p relative to clock(s) tx_div_clk
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on rx_os_sync_n relative to clock(s) rx_os_div_clk
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on rx_os_sync_p relative to clock(s) rx_os_div_clk
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on rx_sync_n relative to clock(s) rx_div_clk
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on rx_sync_p relative to clock(s) rx_div_clk
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on spi_csn_ad9528 relative to clock(s) spi0_clk
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on spi_csn_adrv9009 relative to clock(s) spi0_clk
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on spi_mosi relative to clock(s) spi0_clk
+Related violations: <none>
+
+TIMING-35#1 Warning
+No common node in paths with the same clock  
+The clock dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK has paths without a common node. First path found between dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/shiftreg_reg[0]/C and dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TDO. Please review clock constraints
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -quiet -hier *reset_sync_in_reg*/PRE -filter {NAME =~ *i_reset_manager*}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '504' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_adrv9009_tx_dma_0/system_axi_adrv9009_tx_dma_0_constr.xdc (Line: 192)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -quiet -hier *reset_sync_in_reg*/PRE -filter {NAME =~ *i_reset_manager*}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '505' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_adrv9009_tx_dma_0/system_axi_adrv9009_tx_dma_0_constr.xdc (Line: 198)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -quiet -hier *reset_sync_in_reg*/PRE -filter {NAME =~ *i_reset_manager*}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '555' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_adrv9009_rx_dma_0/system_axi_adrv9009_rx_dma_0_constr.xdc (Line: 192)
+Related violations: <none>
+
+XDCB-5#4 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -quiet -hier *reset_sync_in_reg*/PRE -filter {NAME =~ *i_reset_manager*}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '556' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_adrv9009_rx_dma_0/system_axi_adrv9009_rx_dma_0_constr.xdc (Line: 198)
+Related violations: <none>
+
+XDCB-5#5 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -quiet -hier *reset_sync_in_reg*/PRE -filter {NAME =~ *i_reset_manager*}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '606' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_adrv9009_rx_os_dma_0/system_axi_adrv9009_rx_os_dma_0_constr.xdc (Line: 192)
+Related violations: <none>
+
+XDCB-5#6 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -quiet -hier *reset_sync_in_reg*/PRE -filter {NAME =~ *i_reset_manager*}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '607' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.srcs/sources_1/bd/system/ip/system_axi_adrv9009_rx_os_dma_0/system_axi_adrv9009_rx_os_dma_0_constr.xdc (Line: 198)
+Related violations: <none>
+
+CLKC-11#1 Advisory
+MMCME4 divide could be done by BUFG_GT  
+The MMCME4 cell i_system_wrapper/system_i/axi_adrv9009_rx_clkgen/inst/i_mmcm_drp/i_mmcme4 driven by BUFG_GT cell i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_0/i_rx_bufg uses CLKOUT* output(s) with a DIVIDE value of [1..8] which could be accomplished using a BUFG_GT divide capability. Consider using BUFG_GT(s) to accomplish the desired divide(s).
+Related violations: <none>
+
+CLKC-11#2 Advisory
+MMCME4 divide could be done by BUFG_GT  
+The MMCME4 cell i_system_wrapper/system_i/axi_adrv9009_rx_os_clkgen/inst/i_mmcm_drp/i_mmcme4 driven by BUFG_GT cell i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_2/i_rx_bufg uses CLKOUT* output(s) with a DIVIDE value of [1..8] which could be accomplished using a BUFG_GT divide capability. Consider using BUFG_GT(s) to accomplish the desired divide(s).
+Related violations: <none>
+
+CLKC-11#3 Advisory
+MMCME4 divide could be done by BUFG_GT  
+The MMCME4 cell i_system_wrapper/system_i/axi_adrv9009_tx_clkgen/inst/i_mmcm_drp/i_mmcme4 driven by BUFG_GT cell i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_0/i_tx_bufg uses CLKOUT* output(s) with a DIVIDE value of [1..8] which could be accomplished using a BUFG_GT divide capability. Consider using BUFG_GT(s) to accomplish the desired divide(s).
+Related violations: <none>
+
+CLKC-26#1 Advisory
+MMCME4 with BUF_IN drives sequential IO with CLKOUT0  
+The MMCME4 cell i_system_wrapper/system_i/axi_adrv9009_tx_clkgen/inst/i_mmcm_drp/i_mmcme4 has COMPENSATION value BUF_IN, but CLKOUT0 output drives sequential cells directly connected to ports. In order to achieve insertion delay and phase-alignment for the sequential cells directly connected to ports, a COMPENSATION of ZHOLD must be used. (The problem cell is i_ibufds_tx_sync/IBUFCTRL_INST (in i_ibufds_tx_sync macro).)
+Related violations: <none>
+
+CLKC-30#1 Advisory
+MMCME4 not driven by IO has BUFG in feedback loop  
+The MMCME4 cell i_system_wrapper/system_i/axi_adrv9009_rx_clkgen/inst/i_mmcm_drp/i_mmcme4 has a BUFGCE i_system_wrapper/system_i/axi_adrv9009_rx_clkgen/inst/i_mmcm_drp/i_fb_clk_bufg clock buffer in the feedback loop, but the clock input is not directly driven by an I/O to create a Zero Delay Buffer Clock (a common use for having a buffer in the feedback loop). If there is no specific need for this buffer in the feedback loop (e.g. no timing paths between CLKINx/CLKOUTx domains or low latency requirement), then it is suggested to remove that BUFG* from the feedback path. This will allow for a lower power solution and free the clock resource for other purposes.
+Related violations: <none>
+
+CLKC-30#2 Advisory
+MMCME4 not driven by IO has BUFG in feedback loop  
+The MMCME4 cell i_system_wrapper/system_i/axi_adrv9009_rx_os_clkgen/inst/i_mmcm_drp/i_mmcme4 has a BUFGCE i_system_wrapper/system_i/axi_adrv9009_rx_os_clkgen/inst/i_mmcm_drp/i_fb_clk_bufg clock buffer in the feedback loop, but the clock input is not directly driven by an I/O to create a Zero Delay Buffer Clock (a common use for having a buffer in the feedback loop). If there is no specific need for this buffer in the feedback loop (e.g. no timing paths between CLKINx/CLKOUTx domains or low latency requirement), then it is suggested to remove that BUFG* from the feedback path. This will allow for a lower power solution and free the clock resource for other purposes.
+Related violations: <none>
+
+CLKC-30#3 Advisory
+MMCME4 not driven by IO has BUFG in feedback loop  
+The MMCME4 cell i_system_wrapper/system_i/axi_adrv9009_tx_clkgen/inst/i_mmcm_drp/i_mmcme4 has a BUFGCE i_system_wrapper/system_i/axi_adrv9009_tx_clkgen/inst/i_mmcm_drp/i_fb_clk_bufg clock buffer in the feedback loop, but the clock input is not directly driven by an I/O to create a Zero Delay Buffer Clock (a common use for having a buffer in the feedback loop). If there is no specific need for this buffer in the feedback loop (e.g. no timing paths between CLKINx/CLKOUTx domains or low latency requirement), then it is suggested to remove that BUFG* from the feedback path. This will allow for a lower power solution and free the clock resource for other purposes.
+Related violations: <none>
+
+CLKC-56#1 Advisory
+MMCME4 with global clock driver has no LOC  
+The MMCME4_ADV cell i_system_wrapper/system_i/axi_adrv9009_rx_clkgen/inst/i_mmcm_drp/i_mmcme4 CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_0/i_rx_bufg and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+CLKC-56#2 Advisory
+MMCME4 with global clock driver has no LOC  
+The MMCME4_ADV cell i_system_wrapper/system_i/axi_adrv9009_rx_os_clkgen/inst/i_mmcm_drp/i_mmcme4 CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_2/i_rx_bufg and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+CLKC-56#3 Advisory
+MMCME4 with global clock driver has no LOC  
+The MMCME4_ADV cell i_system_wrapper/system_i/axi_adrv9009_tx_clkgen/inst/i_mmcm_drp/i_mmcme4 CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) i_system_wrapper/system_i/util_adrv9009_xcvr/inst/i_xch_0/i_tx_bufg and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+

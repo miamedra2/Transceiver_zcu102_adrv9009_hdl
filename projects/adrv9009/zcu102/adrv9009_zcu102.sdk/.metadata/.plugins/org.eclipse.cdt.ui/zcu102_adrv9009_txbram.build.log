@@ -1,0 +1,6 @@
+11:23:56 **** Incremental Build of configuration Debug for project zcu102_adrv9009_txbram ****
+make all 
+make: Nothing to be done for 'all'.
+
+11:23:56 Build Finished (took 157ms)
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Fri Oct 16 16:22:10 2020
+# Process ID: 9916
+# Current directory: C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.sdk/webtalk/webtalk.log
+# Journal file: C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

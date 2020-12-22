@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 18 11:11:29 2020
+# Process ID: 9520
+# Current directory: C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.runs/xvr_refclk_out_synth_1
+# Command line: vivado.exe -log xvr_refclk_out.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xvr_refclk_out.tcl
+# Log file: C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.runs/xvr_refclk_out_synth_1/xvr_refclk_out.vds
+# Journal file: C:/github/hdl/projects/adrv9009/zcu102/adrv9009_zcu102.runs/xvr_refclk_out_synth_1\vivado.jou
+#-----------------------------------------------------------
+source xvr_refclk_out.tcl -notrace

@@ -1,0 +1,939 @@
+15:35:07 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:35:10 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:36:11 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:36:42 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:37:55 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'getlastline':
+../src/helloworld.c:43:7: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  temp = &tx_fh;
+       ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:160:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3102	    632	      8	   3742	    e9e	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:38:18 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:160:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3102	    632	      8	   3742	    e9e	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:38:29 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:47:20 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:156:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3179	    640	      8	   3827	    ef3	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:47:28 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:48:25 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:49:33 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:157:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3186	    640	      8	   3834	    efa	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:49:39 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+17:50:09 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+17:53:05 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+17:58:35 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:03:00 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:03:07 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:04:44 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:158:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3210	    640	      8	   3858	    f12	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+18:04:48 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:05:08 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:158:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3186	    640	      8	   3834	    efa	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+18:05:12 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:09:40 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:11:37 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:14:23 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:19:40 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:23:30 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:25:17 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:27:11 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:29:59 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+18:30:59 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:23:00 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:12:29 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:02:46 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:36:06 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+08:48:58 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+08:54:59 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:47:30 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:48:34 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:22:38 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:22:54 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:39:47 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:158:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3194	    640	      8	   3842	    f02	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+11:42:05 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:50:47 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:158:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3186	    640	      8	   3834	    efa	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+11:50:50 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:52:35 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:56:47 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:57:57 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:59:16 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+13:34:32 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:55:21 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:19 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:19 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:59:06 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:52:12 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:158:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3186	    640	      8	   3834	    efa	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+10:02:56 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:24:53 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:05:37 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:30:51 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:53:43 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+08:54:57 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+13:27:20 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:12:11 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:12:42 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+12:05:38 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+12:38:02 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:31:41 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:33:22 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:39:00 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:40:22 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:44:40 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+12:10:26 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+13:25:51 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+13:39:48 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+13:56:02 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:19:02 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:20:49 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:25:36 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:46:35 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:48:40 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:55:31 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:03 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:55 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:35:21 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:29:32 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:158:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3186	    640	      8	   3834	    efa	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:36:53 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:6: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+      else
+      ^~~~
+../src/helloworld.c:133:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+       printf("%d\r\n", i);
+       ^~~~~~
+../src/helloworld.c:159:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3210	    640	      8	   3858	    f12	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:37:08 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:6: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+      else
+      ^~~~
+../src/helloworld.c:133:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+       printf("%d\r\n", i);
+       ^~~~~~
+../src/helloworld.c:159:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3082	    640	      8	   3730	    e92	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:37:10 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:38:35 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:6: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+      else
+      ^~~~
+../src/helloworld.c:133:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+       fseek(tx_fh, 0, SEEK_SET);
+       ^~~~~
+../src/helloworld.c:160:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3098	    640	      8	   3746	    ea2	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:40:51 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:162:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3098	    640	      8	   3746	    ea2	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:43:35 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:159:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3186	    640	      8	   3834	    efa	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:44:35 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:134:7: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+       print("%d\n", i);
+       ^~~~~
+       printf
+../src/helloworld.c:162:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+./src/helloworld.o: In function `main':
+C:\github\hdl\projects\adrv9009\zcu102\adrv9009_zcu102.sdk\zcu102_adrv9009\Debug/../src/helloworld.c:134: undefined reference to `print'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: zcu102_adrv9009.elf] Error 1
+15:44:47 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:134:7: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+       print("%d \r\n", i);
+       ^~~~~
+       printf
+../src/helloworld.c:163:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+./src/helloworld.o: In function `main':
+C:\github\hdl\projects\adrv9009\zcu102\adrv9009_zcu102.sdk\zcu102_adrv9009\Debug/../src/helloworld.c:134: undefined reference to `print'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: zcu102_adrv9009.elf] Error 1
+15:44:50 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:163:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3202	    640	      8	   3850	    f0a	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:44:52 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:45:48 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:45:53 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:163:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3210	    640	      8	   3858	    f12	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:45:55 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:48:54 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:51:20 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:34:58 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:35:19 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:38:56 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+17:00:26 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+17:01:21 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:163:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3042	    640	      8	   3690	    e6a	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+10:43:41 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+12:23:34 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+12:30:48 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:58:10 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:57:02 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:163:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3042	    640	      8	   3690	    e6a	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+15:58:00 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:14:38 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:27:50 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:32:49 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:38:02 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:54:00 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:54:18 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+12:58:14 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+13:57:31 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+15:06:50 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:31:15 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:41:28 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:43:22 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+16:46:10 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:46:58 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:20:58 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:21:19 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:25:26 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:08 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:38 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:51:32 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:54:34 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:55:28 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:59:39 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:04:01 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:11:00 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:18:33 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:12:11 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:23:23 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:04:47 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:06:10 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:14:11 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:17:15 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:22:05 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:27:57 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:36:16 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:51:53 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+14:52:06 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:04:09 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:19:28 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:21:17 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:11:36 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:13:48 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+10:15:47 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:28:42 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:38:44 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:163:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3098	    640	      8	   3746	    ea2	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+09:38:46 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+09:39:08 **** Auto Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 Linux gcc compiler'
+aarch64-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:163:12: warning: variable 'bit_status' set but not used [-Wunused-but-set-variable]
+  u_int32_t bit_status = ((status >> 4) & 0x0F);
+            ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: zcu102_adrv9009.elf'
+'Invoking: ARM v8 Linux gcc linker'
+aarch64-linux-gnu-gcc  -o "zcu102_adrv9009.elf"  ./src/helloworld.o   
+'Finished building target: zcu102_adrv9009.elf'
+' '
+'Invoking: ARM v8 Linux Print Size'
+aarch64-linux-gnu-size zcu102_adrv9009.elf  |tee "zcu102_adrv9009.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3042	    640	      8	   3690	    e6a	zcu102_adrv9009.elf
+'Finished building: zcu102_adrv9009.elf.size'
+' '
+11:38:23 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+11:42:18 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
+13:37:54 **** Incremental Build of configuration Debug for project zcu102_adrv9009 ****
+make all 
+make: Nothing to be done for 'all'.
